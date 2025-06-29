@@ -261,14 +261,14 @@ if __name__ == "__main__":
     Z_KARE = 0.1
     LR_KARE = 100
     KRR_RIDGE_PENALTY = [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1, 10, 100, 1000, 10000, 100000]
-    KARE_EPOCHS = 100
+    KARE_EPOCHS = 50 #100
     MSE_LR = 0.1
-    MSE_EPOCHS = 10000
+    MSE_EPOCHS = 1000 #10000
     SCALE_LIST = [1, 1.25, 1.5]
     SIGMA_LIST = [0, 0.1]
     SAVE_PATH = "./results/sim/"
     
-    LOOP_ITERATION = 10
+    LOOP_ITERATION = 1 #10
     
     #Repeat the experiment multiple_times and store each of the results
     results_list = []

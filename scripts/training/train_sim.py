@@ -3,6 +3,8 @@ train_sim.py
 -------------------------------------------------------
 This script trains a neural network using KARE and MSE loss functions on a synthetic dataset.
 """
+import os
+import json
 from collections import defaultdict
 import numpy as np
 import torch

@@ -308,6 +308,9 @@ if __name__ == "__main__":
                         "MSE_EPOCHS" : MSE_EPOCHS,
                         "SCALE_LIST" : SCALE_LIST,
                         "SIGMA_LIST" : SIGMA_LIST}
-    
-    with open(SAVE_PATH + "v1_avg10.json", "w") as f:
+    # Ensure the save directory exists
+    os.makedirs(SAVE_PATH, exist_ok=True)
+    file_path = os.path.join(SAVE_PATH, "v1_avg10.json")
+
+    with open(file_path, "w") as f:
         json.dump(to_json, f, indent=4)
